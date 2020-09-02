@@ -74,7 +74,6 @@
     <record id="action_evaluation_response_report_all" model="ir.actions.act_window">
         <field name="name">Question Analysis</field>
         <field name="res_model">academic.evaluation.report</field>
-        <field name="view_type">form</field>
         <field name="view_mode">pivot,graph,tree</field>
         <field name="search_view_id" ref="view_evaluation_response_search"/>
         <field name="view_id" ref="view_evaluation_response_pivot"/>

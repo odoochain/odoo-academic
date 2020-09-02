@@ -74,7 +74,6 @@ class ResPartner(models.Model):
         compute='compute_related_user_id',
     )
 
-    @api.multi
     def compute_related_user_id(self):
         for rec in self:
             rec.related_user_id = rec.user_ids and rec.user_ids[0]
@@ -85,7 +84,6 @@ class ResPartner(models.Model):
         recs = self.filtered(lambda x: x.is_company and x.partner_type)
         recs.update({'partner_type': False})
 
-    @api.multi
     def quickly_create_portal_user(self):
         """ Metodo que crea o activa usuario inactivo en el grupo portal que
         se defina

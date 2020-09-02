@@ -323,7 +323,6 @@ class AcademicDivisionAnalysis(models.Model):
         'Administrator Performance', compute="_compute_indicators",
         digits=dp.get_precision('Sub Indicator Weight'))
 
-    @api.multi
     def _compute_indicators(self):
         for rec in self:
             rec.subi_internal_lang_value = rec._get_values(

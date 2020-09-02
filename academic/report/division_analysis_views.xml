@@ -330,7 +330,6 @@
     <record id="action_academic_division_analysis_conf" model="ir.actions.act_window">
         <field name="name">Division Analysis Configuration</field>
         <field name="res_model">academic.division_analysis</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="search_view_id" ref=""/>
         <field name="view_id" ref=""/>

@@ -42,7 +42,6 @@ class AcademicDivisionAnalysisWizard(models.TransientModel):
         'Incluir Evaluaciones Diagnóstico?',
     )
 
-    @api.multi
     def action_confirm(self):
         group_ids = [x.id for x in self.group_ids]
         period_ids = [x.id for x in self.period_ids]
